@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Book_of_C</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Book of C</label>
+        <sharedTo>
+            <role>InstallationRepairServices</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Domain__c</field>
+            <operation>equals</operation>
+            <value>C</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Book_of_Salesforce</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Book of Salesforce</label>
+        <sharedTo>
+            <role>CustomerSupportInternational</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Domain__c</field>
+            <operation>equals</operation>
+            <value>Salesforce</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Domain_rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Domain rule</label>
+        <sharedTo>
+            <role>SVPCustomerServiceSupport</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Domain__c</field>
+            <operation>equals</operation>
+            <value>Java</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

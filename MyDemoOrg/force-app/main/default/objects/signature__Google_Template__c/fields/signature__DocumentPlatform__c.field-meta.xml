@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>signature__DocumentPlatform__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Document Platform</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Google Docs</fullName>
+                <default>false</default>
+                <label>Google Docs</label>
+            </value>
+            <value>
+                <fullName>Visualforce</fullName>
+                <default>false</default>
+                <label>Visualforce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

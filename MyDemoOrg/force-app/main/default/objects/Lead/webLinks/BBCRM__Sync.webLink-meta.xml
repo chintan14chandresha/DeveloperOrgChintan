@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BBCRM__Sync</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Sync to BuzzBoard</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/BBCRM__BuzzBoard_Synclisting?id={!Lead.Id}</url>
+</WebLink>

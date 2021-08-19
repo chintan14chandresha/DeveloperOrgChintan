@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>signature__ValueBoolean__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox value to be given to the field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checkbox value to be given to the field</inlineHelpText>
+    <label>Value (Boolean)</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

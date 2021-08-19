@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>signature__All</fullName>
+    <columns>NAME</columns>
+    <columns>signature__RecordID__c</columns>
+    <columns>signature__UpdateType__c</columns>
+    <columns>signature__Field__c</columns>
+    <columns>signature__Value__c</columns>
+    <columns>signature__ValueBoolean__c</columns>
+    <columns>signature__ValueDate__c</columns>
+    <columns>signature__ValueDateTime__c</columns>
+    <columns>signature__ValueNumeric__c</columns>
+    <columns>signature__Status__c</columns>
+    <columns>signature__ForceOverwrite__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>signature__SignedBy__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>if ( not ( isblank ( signature__ActualSignedUser__c ) ), 
+HYPERLINK(&quot;/&quot; &amp; signature__ActualSignedUser__c, signature__ActualSignedUser__r.FirstName &amp; &quot; &quot; &amp; signature__ActualSignedUser__r.LastName, &quot;_Top&quot;) &amp; &quot;, &quot; &amp; 
+
+TEXT(MONTH(DATEVALUE(signature__ActualSignedTimestamp__c)))+&quot;/&quot; +TEXT(DAY(DATEVALUE(signature__ActualSignedTimestamp__c)))+&quot;/&quot; +TEXT(YEAR(DATEVALUE(signature__ActualSignedTimestamp__c))) &amp; &quot; &quot; &amp; 
+
+IF( 
+OR( 
+VALUE( MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 12, 2 ) ) = 0, 
+VALUE( MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 12, 2 ) ) = 12 
+), 
+&quot;12&quot;, 
+TEXT( VALUE( MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 12, 2 ) ) 
+- 
+IF( 
+VALUE( MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 12, 2 ) ) &lt; 12, 
+0, 
+12 
+) 
+) 
+) 
+&amp; &quot;:&quot; &amp; 
+MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 15, 2 ) 
+&amp; &quot; &quot; &amp; 
+IF( 
+VALUE( MID( TEXT( signature__ActualSignedTimestamp__c - (5/24) ), 12, 2 ) ) &lt; 12, 
+&quot;AM&quot;, 
+&quot;PM&quot; 
+) 
+
+, &quot;&quot; )</formula>
+    <label>Signed By</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

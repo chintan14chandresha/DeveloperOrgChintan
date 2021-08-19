@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>signature__Requests</fullName>
+    <columns>NAME</columns>
+    <columns>signature__Contact__c</columns>
+    <columns>signature__Date__c</columns>
+    <columns>signature__Clicked__c</columns>
+    <columns>signature__Signed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>signature__Clicked__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Requests</label>
+</ListView>

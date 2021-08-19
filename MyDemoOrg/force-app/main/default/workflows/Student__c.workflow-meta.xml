@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_to_Anushka</fullName>
+        <ccEmails>chintanchandresa@gmail.com</ccEmails>
+        <description>Email to Anushka</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anus@sharma.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/salesforce_course</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Anushka1</fullName>
+        <ccEmails>chintanchandresa@gmail.com</ccEmails>
+        <description>Email to Anushka</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anus@sharma.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SalesNewCustomerEmail</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Female_rule</fullName>
+        <field>Name</field>
+        <formula>&apos;Miss &apos; + Name</formula>
+        <name>Female rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>male_rule</fullName>
+        <field>Name</field>
+        <formula>&apos;Mr &apos; + Name</formula>
+        <name>male rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Course Salesforce</fullName>
+        <actions>
+            <name>Email_to_Anushka</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Enrollment_of_salesforce</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Student__c.Course__c</field>
+            <operation>equals</operation>
+            <value>Salesforce</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Email_to_Anushka1</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Student__c.Trigger_Time_05__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Rule for Female</fullName>
+        <actions>
+            <name>Female_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Student__c.Gender__c</field>
+            <operation>equals</operation>
+            <value>Female</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Rule for male</fullName>
+        <actions>
+            <name>male_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Student__c.Gender__c</field>
+            <operation>equals</operation>
+            <value>Male</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Enrollment_of_salesforce</fullName>
+        <assignedTo>anus@sharma.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>4</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Enrollment of salesforce</subject>
+    </tasks>
+</Workflow>

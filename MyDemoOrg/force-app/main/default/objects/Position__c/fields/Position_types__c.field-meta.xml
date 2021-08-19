@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Position_types__c</fullName>
+    <externalId>false</externalId>
+    <label>Position type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Working_experience__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fresher</fullName>
+                <default>false</default>
+                <label>Fresher</label>
+            </value>
+            <value>
+                <fullName>Experienced</fullName>
+                <default>false</default>
+                <label>Experienced</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <controllingFieldValue>6</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <valueName>Experienced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0</controllingFieldValue>
+            <valueName>Fresher</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

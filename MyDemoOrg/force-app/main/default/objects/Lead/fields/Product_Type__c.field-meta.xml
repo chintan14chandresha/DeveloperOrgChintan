@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S-Comm</fullName>
+                <default>false</default>
+                <label>S-Comm</label>
+            </value>
+            <value>
+                <fullName>Referral Partner</fullName>
+                <default>false</default>
+                <label>Referral Partner</label>
+            </value>
+            <value>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+                <label>Terminal</label>
+            </value>
+            <value>
+                <fullName>Self-Service Kiosk POS</fullName>
+                <default>false</default>
+                <label>Self-Service Kiosk POS</label>
+            </value>
+            <value>
+                <fullName>Mobile POS</fullName>
+                <default>false</default>
+                <label>Mobile POS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

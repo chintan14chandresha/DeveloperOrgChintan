@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Record created when a signature is completed.</description>
+    <label>Record Creation</label>
+    <pluralLabel>Record Creations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
