@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מחרוזת זו משמשת את צרכני התוספים לאיתור התוספים שלה. על פי המוסכמה, זה יהיה שם ממשק התוספים. עיין בתיעוד לפונקציה המורחבת.</help>
+    <label></label>
+    <name>fferpcore__ExtensionPoint__c</name>
+</CustomFieldTranslation>

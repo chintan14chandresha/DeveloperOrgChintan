@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>fferpcore__MonthlyRecurRelativeDateFlavor__c</name>
+    <picklistValues>
+        <masterLabel>Friday</masterLabel>
+        <translation>יום שישי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monday</masterLabel>
+        <translation>יום שני</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saturday</masterLabel>
+        <translation>יום שבת</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunday</masterLabel>
+        <translation>יום ראשון</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thursday</masterLabel>
+        <translation>יום חמישי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuesday</masterLabel>
+        <translation>יום שלישי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wednesday</masterLabel>
+        <translation>יום רביעי</translation>
+    </picklistValues>
+</CustomFieldTranslation>

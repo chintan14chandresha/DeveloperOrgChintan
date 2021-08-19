@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>fferpcore__VisibleFields__c</name>
+    <picklistValues>
+        <masterLabel>Daily</masterLabel>
+        <translation>יומי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End After X</masterLabel>
+        <translation>סוף אחרי X</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End Date</masterLabel>
+        <translation>תאריך סיום</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hourly</masterLabel>
+        <translation>לפי שעה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation>חודשי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preferred Start Time</masterLabel>
+        <translation>זמן התחלה מועדף</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Date</masterLabel>
+        <translation>תאריך התחלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation>שבועי</translation>
+    </picklistValues>
+</CustomFieldTranslation>

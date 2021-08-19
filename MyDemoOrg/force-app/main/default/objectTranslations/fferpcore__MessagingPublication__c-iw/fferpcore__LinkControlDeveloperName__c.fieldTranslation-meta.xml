@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>יש לאכלס שדה זה כדי לאפשר קישור אובייקטים. אובייקטים של יעד מנויים המבקשים לקשר לאובייקט מקור פרסום זה צריכים להיות בעלי שם מיוחד לשדות הכוללים שם מפתח מפתחים לבקרת קישור.</help>
+    <label></label>
+    <name>fferpcore__LinkControlDeveloperName__c</name>
+</CustomFieldTranslation>

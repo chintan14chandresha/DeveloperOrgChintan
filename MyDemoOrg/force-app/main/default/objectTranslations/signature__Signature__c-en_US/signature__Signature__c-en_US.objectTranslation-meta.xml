@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>signature__SignatureFields</name>
+    </fieldSets>
+    <webLinks>
+        <label></label>
+        <name>signature__Print</name>
+    </webLinks>
+</CustomObjectTranslation>

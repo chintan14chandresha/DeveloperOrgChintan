@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מזהה הפרסום. זה חייב להיות ייחודי לפרסומים מותאמים אישית. אם לא תזין ערך, שדה זה מוגדר אוטומטית לשילוב של שם הפרסום ואובייקט המקור כשאתה שומר את הפרסום.</help>
+    <label></label>
+    <name>fferpcore__Identifier__c</name>
+</CustomFieldTranslation>

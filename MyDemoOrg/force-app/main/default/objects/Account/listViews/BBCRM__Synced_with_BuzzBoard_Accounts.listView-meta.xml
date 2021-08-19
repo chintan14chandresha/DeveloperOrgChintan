@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BBCRM__Synced_with_BuzzBoard_Accounts</fullName>
+    <booleanFilter>(1 OR 2) OR 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>BBCRM__BuzzBoard_Sync_Status__c</columns>
+    <columns>BBCRM__BuzzRank__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>BBCRM__BuzzBoard_Audit_Link__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>BBCRM__BuzzRank__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>BBCRM__BuzzBoard_Sync_Status__c</field>
+        <operation>equals</operation>
+        <value>Synced</value>
+    </filters>
+    <label>Synced with BuzzBoard Accounts</label>
+    <language>en_US</language>
+</ListView>

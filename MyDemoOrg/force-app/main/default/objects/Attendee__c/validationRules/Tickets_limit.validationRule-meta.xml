@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tickets_limit</fullName>
+    <active>true</active>
+    <description>this is the limit to the tickets to be sold to one customer which is minimum one and maximum 8.</description>
+    <errorConditionFormula>( Tickets_Purchased__c  &gt; 8   ||   Tickets_Purchased__c  &lt; 1)</errorConditionFormula>
+    <errorDisplayField>Tickets_Purchased__c</errorDisplayField>
+    <errorMessage>Sorry you can buy tickets only in range of 1 to 8.</errorMessage>
+</ValidationRule>

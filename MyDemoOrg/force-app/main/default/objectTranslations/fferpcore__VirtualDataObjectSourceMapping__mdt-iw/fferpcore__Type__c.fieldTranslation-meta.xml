@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>סוג המיפוי. שדה לערכים יחידים. חיפוש אחר הצבעה על רשומה אחרת. רשימה להצבעה לרשומות משויכות מרובות.</help>
+    <label></label>
+    <name>fferpcore__Type__c</name>
+    <picklistValues>
+        <masterLabel>Field</masterLabel>
+        <translation>שדה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>List</masterLabel>
+        <translation>רשימה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lookup</masterLabel>
+        <translation>הבט מעלה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

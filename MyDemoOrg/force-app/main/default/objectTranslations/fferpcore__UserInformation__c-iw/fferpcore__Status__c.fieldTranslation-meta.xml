@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>סטטוס המידע שיוחל על משתמש Salesforce.</help>
+    <label></label>
+    <name>fferpcore__Status__c</name>
+    <picklistValues>
+        <masterLabel>Activating</masterLabel>
+        <translation>מפעיל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation>פעיל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Creating</masterLabel>
+        <translation>יוצר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deactivated</masterLabel>
+        <translation>מבוטל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deactivating</masterLabel>
+        <translation>מבטל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Activate</masterLabel>
+        <translation>ההפעלה נכשלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Create</masterLabel>
+        <translation>היצירה נכשלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Deactivate</masterLabel>
+        <translation>ביטול ההפעלה נכשל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed to Update</masterLabel>
+        <translation>עדכון נכשל</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Activation</masterLabel>
+        <translation>בהמתנה להפעלה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Create</masterLabel>
+        <translation>בהמתנה ליצור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Deactivation</masterLabel>
+        <translation>כיבוי בהמתנה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Update</masterLabel>
+        <translation>עדכון ממתין</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Updating</masterLabel>
+        <translation>מעדכן</translation>
+    </picklistValues>
+</CustomFieldTranslation>

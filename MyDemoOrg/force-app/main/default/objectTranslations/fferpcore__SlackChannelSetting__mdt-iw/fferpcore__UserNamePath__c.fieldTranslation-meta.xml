@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>הנתיב או שם ה- API של השדה המכיל את מזהה המשתמש שברצונך להציג בעמודת המשתמש של רכיב ה- Slack Channel.</help>
+    <label></label>
+    <name>fferpcore__UserNamePath__c</name>
+</CustomFieldTranslation>

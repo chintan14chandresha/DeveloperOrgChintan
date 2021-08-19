@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>רשימה מופרדת בפסיק של אינדקס חלקי רצף שעבורם ניתן לאפס לערך ההתחלתי כאשר הנתונים שהוחזרו על ידי שדה ערך משתנים.</help>
+    <label></label>
+    <name>fferpcore__ResetSequenceForParts__c</name>
+</CustomFieldTranslation>

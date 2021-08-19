@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>תיבת סימון או שדה נוסחה ברשומה שקובע אם יש לרצף אותו. שדה תיבת הסימון או הנוסחה חייבים להיות שווים נכון לרישום שיש לרצף.</help>
+    <label></label>
+    <name>fferpcore__IncludeRecord__c</name>
+</CustomFieldTranslation>

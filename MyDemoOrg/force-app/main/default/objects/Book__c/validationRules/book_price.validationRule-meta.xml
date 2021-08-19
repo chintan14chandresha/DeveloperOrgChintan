@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>book_price</fullName>
+    <active>true</active>
+    <description>book price can&apos;t be zero</description>
+    <errorConditionFormula>Price__c   &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Price__c</errorDisplayField>
+    <errorMessage>Price can&apos;t be negative or zero.</errorMessage>
+</ValidationRule>

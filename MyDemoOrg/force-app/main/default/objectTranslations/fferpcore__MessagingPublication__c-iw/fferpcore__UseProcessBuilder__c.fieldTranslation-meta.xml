@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מציין אם משמש Builder Process להפעלת מסירת הודעות. כאשר הוא מסולק, משתמשים בהדק המסופק עם הפרסום. כאשר נבחר, נעשה שימוש בתהליך המשויך לפרסום מזהה.</help>
+    <label></label>
+    <name>fferpcore__UseProcessBuilder__c</name>
+</CustomFieldTranslation>

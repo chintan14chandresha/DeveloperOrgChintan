@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>פורמט של רצף המספרים שיוצב בשדה. ניתן לציין נתונים סטטיים, אינדקס של חלק הרצף הסגור בסוגריים מתולתלים, ואפסים מובילים הסגורים בסוגריים מתולתלים.</help>
+    <label></label>
+    <name>fferpcore__Format__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BBCRM__BB_Sync_Items__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>BB Sync Items</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Task sync</fullName>
+                <default>false</default>
+                <label>Task sync</label>
+            </value>
+            <value>
+                <fullName>Contact sync</fullName>
+                <default>false</default>
+                <label>Contact sync</label>
+            </value>
+            <value>
+                <fullName>Event sync</fullName>
+                <default>false</default>
+                <label>Event sync</label>
+            </value>
+            <value>
+                <fullName>Email notifications sync</fullName>
+                <default>false</default>
+                <label>Email notifications sync</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
