@@ -1,0 +1,11 @@
+<apex:page controller="test">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+  <apex:form >
+      <!--
+    <apex:commandLink action="{!save}" value="Click Me !" id="theCommandLink" oncomplete="window.close()"/>
+	 -->
+  </apex:form>
+</apex:page>

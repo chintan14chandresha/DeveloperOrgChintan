@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="accept" type="List" default="['.jpg', '.jpeg','.png']"/>
+    <aura:attribute name="multiple" type="Boolean" default="true"/>
+    <aura:attribute name="disabled" type="Boolean" default="false"/>
+    <aura:attribute name="fileIds" type="Id[]" />
+    <aura:attribute name="showDocuments" type="Boolean" default="false"/>
+
+    <lightning:fileUpload  name="fileUploader"
+                           label= "Demo Upload"
+                           multiple="{!v.multiple}"
+                           accept="{!v.accept}"
+                           disabled="{!v.disabled}"
+                           recordId="5002800000159FtAAI"
+                           onuploadfinished="{! c.handleUploadFinished }"/>
+    
+    <aura:if isTrue="{!v.showDocuments}">
+                    <aura:iteration items="{!v.fileIds}" var="fileId">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <span>
+                                    
+                                    <lightning:fileCard fileId="{!fileId}"/>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                   </aura:iteration>
+    </aura:if>
+
+</aura:component>

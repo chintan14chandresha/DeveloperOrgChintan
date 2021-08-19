@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>37.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>This page is created for learning purpose from trail head and the page contain a flow which will create records in account,contact and Opportunity.</description>
+    <label>FlowPage</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>8</minorNumber>
+        <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
+</ApexPage>

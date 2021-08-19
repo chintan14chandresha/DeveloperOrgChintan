@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:attribute name="recordId" type="String" default="5002800000159FhAAI"/>
+<aura:attribute name="fields" type="String[]" default="['Name','Description','CreatedById']" />
+
+<lightning:recordForm
+recordId="{!v.recordId}"
+objectApiName="Case"
+fields="{!v.fields}"
+columns="1"
+mode="readOnly"
+/>
+
+<lightning:button aura:id="continue" class="floatRight" label="Change Rec Id" iconName="action:submit_for_approval"
+iconPosition="left" variant="brand" onclick="{!c.changeRecId}" />
+</aura:component>

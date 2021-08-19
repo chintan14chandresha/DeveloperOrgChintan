@@ -1,0 +1,31 @@
+<apex:page controller="CaseCommentBuilderController">
+
+<script type="text/css">
+// CSS Code here....
+}
+</script>
+
+ <apex:form >
+    <apex:pageBlock title="Case Information">
+          <apex:pageBlockSection title="Case Meta Information" collapsible="true">
+              <apex:inputText label="Enter Case Number" id="caseNumber" value="{!caseNumber}">
+                  <apex:actionSupport event="onkeypress" action="{!RefreshPage}" rerender="preview,previewPane"/>
+              </apex:inputText>
+              <apex:inputText label="Enter Case Contact Name" id="contactName" value="{!conName}"/>
+              <apex:inputTextarea label="Enter Case Subject" id="subject" value="{!caseBody}"/>
+          </apex:pageBlockSection>    
+
+          <apex:pageBlockSection title="Case Comment Customize Body" collapsible="true">
+              <apex:inputTextarea label="Enter Case Body" id="body"/>
+          </apex:pageBlockSection>    
+          
+          <apex:pageBlockSection title="Preview" collapsible="true" columns="1" id="preview">
+               <div id="previewPane">               
+                   <p>Hi {!caseNumber}</p>
+               </div>
+          </apex:pageBlockSection>    
+
+
+    </apex:pageBlock>
+ </apex:form>
+</apex:page>

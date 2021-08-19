@@ -1,0 +1,21 @@
+<apex:page controller="ThemeTest" showHeader="true"> 
+
+<apex:includeLightning /> 
+Detected theme from visualforce page: {!UIThemeDescription} 
+
+<div id="lightning" /> 
+
+<script> 
+window.onload = function(){ 
+$Lightning.use("c:ThemeTestApp", function() { 
+
+$Lightning.createComponent("c:ThemeTestComponent", 
+{}, 
+"lightning", 
+function(cmp) { 
+}); 
+}); 
+} 
+</script> 
+
+</apex:page>

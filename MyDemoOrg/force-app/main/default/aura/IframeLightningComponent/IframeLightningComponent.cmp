@@ -1,0 +1,24 @@
+<aura:component implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <!--
+ 	//This is the previous implementation of the code of customer.
+    <aura:attribute name="vfUrl" type="String" />
+    <div>         
+        <iframe height="800px" width="100%" seamless="true" src="{!v.vfUrl}"></iframe>    	
+    </div>
+    <aura:handler name="init" action="{!c.myAction}" value="{!this}"/>
+	-->
+    
+    <!-- Below is the new implementation of the code of customer 
+    
+    <aura:attribute name="subjectId" type="String" default="00128000002rFEOAA2"/>
+    <aura:attribute name="cmpBody" type="List" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    {!v.cmpBody}
+    -->
+    
+	<forceChatter:publisher context="RECORD" recordId="00128000002rFEOAA2" />
+	<forceChatter:feed type="Record" subjectId="00128000002rFEOAA2"/>
+	<!--  RECORD  -->
+    
+</aura:component>

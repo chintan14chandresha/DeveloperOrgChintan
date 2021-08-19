@@ -1,0 +1,15 @@
+.THIS.invisible {
+    display:none;
+}
+.THIS h2 {
+    font-weight:bold;
+   
+}
+.THIS .myCheckbox{
+  display: inline-block;
+  float: left;
+}
+
+.THIS .label-hidden > label {
+    display: none;
+}

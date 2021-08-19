@@ -1,0 +1,8 @@
+<apex:page standardController="Account" renderAs="{!IF(ISBLANK($CurrentPage.Parameters.PDF),'','pdf')}">
+<apex:outputPanel rendered="{!ISBLANK($CurrentPage.Parameters.PDF)}">
+<apex:outputLink value="{!URLFOR($Page.PdfPreview,null,[PDF=true])}" target="_blank">PDF</apex:outputLink>
+</apex:outputPanel>
+<apex:outputPanel rendered="{!NOT(ISBLANK($CurrentPage.Parameters.PDF))}">
+OK!!!
+</apex:outputPanel>
+</apex:page>

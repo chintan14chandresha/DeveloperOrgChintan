@@ -1,0 +1,36 @@
+<aura:component >
+    <aura:if isTrue="true">    
+        <lightning:recordEditForm aura:id="giftRecordForm" objectApiName="Festival__c" onload="{!c.showSplitExpense}" onsuccess="{!c.handleSuccess}">
+        <lightning:messages />
+        <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-2">
+        <lightning:inputField fieldName="Name"/>    
+        <lightning:inputField fieldName="General_Admission_Ticket_Sold__c"/>
+        <lightning:inputField fieldName="Total_Tickets_Sold__c"/>
+        <lightning:inputField fieldName="VIP_Ticket_Sold__c"/>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+        </div>
+        </div>
+        </lightning:recordEditForm>
+    </aura:if>
+    
+    <aura:if isTrue="false">
+        <lightning:recordEditForm aura:id="giftRecordForm" objectApiName="Festival__c" onload="{!c.showSplitExpense}" onsuccess="{!c.handleSuccess}">
+        <lightning:messages />
+        <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-2">
+        <lightning:inputField fieldName="Name"/>    
+        <lightning:inputField fieldName="General_Admission_Ticket_Sold__c"/>
+        <lightning:inputField fieldName="Total_Tickets_Sold__c"/>
+        <lightning:inputField fieldName="VIP_Ticket_Sold__c"/>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+        </div>
+        </div>
+        </lightning:recordEditForm>    
+    </aura:if>
+    
+    <lightning:button variant="brand" label="Save" title="Save" onclick="{!c.saveClick }"/>
+    
+</aura:component>

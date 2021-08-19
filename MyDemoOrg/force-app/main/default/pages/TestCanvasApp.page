@@ -1,0 +1,10 @@
+<apex:page standardController="Contact" extensions="CompassCanvasController" lightningStylesheets="true">
+    <apex:outputPanel rendered="true">
+            <apex:outputPanel rendered="{!IF(environment == 'Prod', true, false)}" style="width:300px;">
+                <apex:canvasApp developerName="testing_canvas_app" width="100%" scrolling="true"/> 
+                
+            </apex:outputPanel>
+        </apex:outputPanel>
+        <br/>
+    <!--    Temporary debug info: <br/>{!parameterJSON}  parameters="{!parameterJSON}" -->
+</apex:page>

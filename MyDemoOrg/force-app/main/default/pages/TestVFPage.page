@@ -1,0 +1,14 @@
+<apex:page standardController="opportunity" extensions="OpportunityClosedLostControllerExtension">
+     
+    
+    <apex:form >
+        TrackingNumber__c :&nbsp; <apex:inputField id="competitor" value="{!opportunity.TrackingNumber__c}" required="true" styleClass="required" />
+                &nbsp;
+                <apex:inputCheckbox id="checkbox"  required="true" value="{!opportunity.isClosed}"/>
+&nbsp;
+        MainCompetitors__c : <apex:inputField style="width:300px;height:100px" id="Salvage" required="true" value="{!opportunity.MainCompetitors__c}"  />
+      &nbsp; 
+            <apex:commandButton action="{!save}" value="Save" id="theButton"/>
+       
+    </apex:form>
+</apex:page>

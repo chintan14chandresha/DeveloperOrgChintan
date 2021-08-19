@@ -1,0 +1,21 @@
+<aura:component controller="ATest" 
+                implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride,force:lightningQuickActionWithoutHeader,lightning:hasPageReference" 
+                access="global" >
+    <!--override Toast CSS with external [.CSS] file.
+    <ltng:require styles="{!$Resource.multilineToastCSS}" />
+	-->     
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:attribute name="testObj" type="String" default="ATestObj__c"/>       
+    <aura:attribute name="selectedList" type="List" />       
+    <aura:attribute name="promotedList" type="List"/>
+   
+    <aura:attribute name="buttonEventAction" type="string" default="" />
+    <aura:handler name="change" value="{!v.buttonEventAction}" action="{!c.handleButtonEvent}" />
+
+    <aura:attribute name="testOverlay" type="Aura.Component[]" />
+    <aura:attribute name="promise" type="Aura.Action" />
+    <lightning:overlayLibrary aura:id="overlaylib"/>
+    
+</aura:component>

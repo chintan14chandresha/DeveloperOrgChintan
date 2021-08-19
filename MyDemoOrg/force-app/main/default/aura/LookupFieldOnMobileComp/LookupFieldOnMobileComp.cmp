@@ -1,0 +1,17 @@
+<aura:component >
+    
+    <aura:attribute name="newTask" type="Task" default="{'sobjectType':'Task',
+                                                        'Description' :'',
+                                                        'Account__c' :'',
+                                                        'OwnerId' : ''
+                                                        }"/>
+    
+	<aura:if isTrue="{!$Browser.isPhone}">                         
+        <div class="slds-form-element__row">
+            <div class="slds-form-element slds-size--1-of-1">
+                <label class="slds-form-element__label" for="TaskPatient">Patient</label> 
+                <force:inputField value="{!v.newTask.Account__c}" aura:id="TaskPatient" />
+            </div>           
+        </div>
+    </aura:if>
+</aura:component>

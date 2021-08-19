@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<aura:attribute name="today" type="Date" default=""/>
+    <aura:attribute name="customDate" type="String" default="1955-06-10 00:00:00"/>
+    <aura:attribute name="customDateV2" type="Date" default="1955-06-10"/>
+    <aura:attribute name="myDateTime" type="Date" default="2014-09-29T00:17:08z"/>
+    
+    <aura:attribute name="finalDate" type="Date" />
+    <aura:attribute name="finalString" type="String" />
+	
+    <ui:inputDateTime aura:id="today" label="Time" class="field" value="" displayDatePicker="true" />
+    <ui:button class="btn" label="Submit" press="{!c.setOutput}"/>	
+	
+    <div aura:id="msg" class="hide">
+		You entered: <ui:outputDateTime aura:id="oDateTime" value=""  />
+    </div>
+    
+    <!-- Below are the main values tested -->
+    Testing value for finalDate : {!v.finalDate}
+    <br/>
+    Testing value for finalString : {!v.finalString}
+    <br/>
+    ui:outputDateTime : <ui:outputDateTime aura:id="oDateTime" value="{!v.customDate}"  />
+    <br/>
+    ui:outputDateTime : <ui:outputDateTime aura:id="oDateTime2" value="{!v.myDateTime}"  />
+    <br/>
+    lightning:formattedDateTime : <lightning:formattedDateTime value="{!v.customDateV2}"/>
+    <br/>
+    lightning:formattedDateTime : <lightning:formattedDateTime value="{!v.myDateTime}"/>
+</aura:component>

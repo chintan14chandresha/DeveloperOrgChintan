@@ -1,0 +1,28 @@
+<aura:component implements="force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes">
+    <div id="FormComp" class="slds-p-bottom_large slds-p-left_large" style="width:500px; position:center;">
+        
+        <!-- Required "TRUE" String Input -->
+        <lightning:input name="stringFirst" type="string" label="Enter String" required="true"/>
+        
+        <!-- Number Input -->
+        <lightning:input name="stringSecond" type="Number" label="Enter Number" />
+        
+        <!-- Select (Picklist) Input 
+        <lightning:select name="ticketsVar" label="How many tickets?" required="true">
+            <option value="">choose one...</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+    	</lightning:select>-->
+        
+        <!-- String Input 
+        <lightning:input name="oneMoreString" type="string" label="Enter one Another String"/>-->
+        
+        <!-- Date Input 
+        <lightning:input name="customDate" type="date" label="Enter date"/>   -->     
+        
+        <!-- Button -->
+        <br/><lightning:button variant="brand" label="Brand action" title="Brand action" onclick="{! c.clickNext }" />
+        
+	</div>
+</aura:component>

@@ -1,0 +1,5 @@
+<apex:page >
+  <apex:image id="theImage" value="{!$Resource.Green_Online_Img}" alt="Description of image here"/>
+  <apex:image id="theImage2" value="/sfc/servlet.shepherd/version/download/0680I00000G78UG" alt="Description of image here"/>
+ <!-- !IMAGEPROXYURL('https://chintan14successpath-dev-ed.my.salesforce.com/sfc/p/28000000K4IO/a/0I000000V9bz/Vp8JsIUUWZpxr3c2RRlOHLMUQhEY6lBrCZXqmF6svMg') -->
+</apex:page>

@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="fields" type="String[]" default="['Name','ExpectedRevenue','CampaignId','AccountId']" />
+    <lightning:recordForm
+        aura:id="myRecordForm"
+        recordId="{!v.recordId}"
+        objectApiName="Opportunity"
+        fields="{!v.fields}"
+        columns="2"
+        mode="edit"
+        onsubmit="{!c.handleSubmit}" />
+    
+    <lightning:recordEditForm
+            recordId="{!v.recordId}"
+            objectApiName="Opportunity">
+        
+        <lightning:inputField fieldName="Name" />
+        <lightning:inputField fieldName="CampaignId" />
+        <lightning:inputField fieldName="AccountId" />
+        
+    </lightning:recordEditForm>
+</aura:component>

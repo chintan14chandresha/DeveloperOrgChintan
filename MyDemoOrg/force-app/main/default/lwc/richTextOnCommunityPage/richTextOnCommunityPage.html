@@ -1,0 +1,9 @@
+<template>
+
+    <lightning-input type="text" label="Enter some text" value={qTitle} onchange={titleChange}> </lightning-input>
+    
+    <lightning-input-rich-text label="Enter Rich Content" value={myVal} onchange={bodyChange} share-with-entity-id={api_MyVal} > </lightning-input-rich-text>
+    
+    <lightning-button label="Submit" title="Toggle content action" onclick={handleClick} formats={formats}> </lightning-button>
+    
+</template>

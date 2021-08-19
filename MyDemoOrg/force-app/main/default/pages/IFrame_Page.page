@@ -1,0 +1,8 @@
+<apex:page title="IFrame">
+    <apex:tabPanel id="tabPan" switchType="client">
+        <apex:tab label="First" id="First" name="First">
+            <iframe src="https://www.google.com" height="800" width="100%" frameborder="0">
+            </iframe>
+        </apex:tab>
+    </apex:tabPanel>
+</apex:page>

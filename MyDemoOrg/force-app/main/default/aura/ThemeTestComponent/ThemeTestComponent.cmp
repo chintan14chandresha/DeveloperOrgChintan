@@ -1,0 +1,7 @@
+<aura:component controller="ThemeTest"> 
+<aura:attribute name="uiTheme" type="String"/> 
+
+<aura:handler name="init" value="{!this}" action="{!c.init}" /> 
+
+Theme detected in Lightning Component: {!v.uiTheme} 
+</aura:component>

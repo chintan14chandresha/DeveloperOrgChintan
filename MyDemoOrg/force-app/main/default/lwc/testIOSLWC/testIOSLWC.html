@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+        <div>
+            <template if:true={error}>
+                <p>{error}</p>
+            </template>
+        </div>
+        <div class="slds-grid slds-page-header forceRelatedListCardHeader">
+            <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                <lightning-icon icon-name="custom:custom94" size="small"></lightning-icon>
+                <h2 class="slds-card__header-title">
+                    <span class="slds-truncate slds-m-right--xx-small">&nbsp;&nbsp;<b>ONC Direct Preference
+                            Center</b></span>
+                </h2>
+            </header>
+        </div>
+
+        <br />
+        <template if:true={hasLIMS}>
+            <div class="slds-form-element">
+                <label class="slds-form-element__label makeitbold" for="text-input-id-1">Account - ONC Direct Address</label>
+                <input type="text" id="text-input-id-1" class="slds-input" value={accONC} />
+            </div>            
+            
+        </template>
+        <template if:false={hasLIMS}>
+            <div class="slds-text-color_destructive">LIMS Clinic ID is missing.</div>
+        </template>
+    </lightning-card>    
+</template>

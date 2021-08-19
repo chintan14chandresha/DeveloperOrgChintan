@@ -1,0 +1,36 @@
+<aura:component implements="lightning:recordHomeTemplate" description="Three Columns and One Header Custom Record Page" >
+    <aura:attribute name="top"		type="Aura.Component[]" />
+	<aura:attribute name="path"		type="Aura.Component[]" />
+    <aura:attribute name="left"		type="Aura.Component[]" />
+	<aura:attribute name="center"	type="Aura.Component[]" />
+    <aura:attribute name="right"	type="Aura.Component[]" />
+    
+    <div>
+        <lightning:layout horizontalAlign="spread">
+            <lightning:layoutItem flexibility="grow" size="{! $Browser.isDesktop ? '4' : '6' }"
+                                  class="slds-m-left_small">
+                <div>{!v.firstElement}</div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="slds-col" flexibility="grow" size="{! $Browser.isDesktop ? '4' : '6' }"
+                                  class="slds-m-left_small">
+                <div>{!v.secondElement}</div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="slds-col" flexibility="grow" size="{! $Browser.isDesktop ? '4' : '6' }"
+                                  class="slds-m-left_small">
+                <div>{!v.thirdElement}</div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="slds-col" flexibility="grow" size="{! $Browser.isDesktop ? '4' : '6' }"
+                                  class="slds-m-left_small">
+                <div>{!v.fouthElement}</div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    <div>
+        <lightning:layout horizontalAlign="space">
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                {!v.centerElement}
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+</aura:component>

@@ -1,0 +1,5 @@
+<apex:page standardController="Account" extensions="test">
+    <apex:form >
+    <apex:commandButton action="{!methodCall}" value="Save" id="theButton"/>   
+    </apex:form>
+</apex:page>

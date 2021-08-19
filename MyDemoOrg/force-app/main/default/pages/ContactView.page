@@ -1,0 +1,30 @@
+<apex:page standardController="Contact" >
+
+<script>
+    function myFunction() {
+       alert("Hello! I am an alert box!");
+       return false;
+    }
+</script>
+  <!--
+  <apex:pageBlock title="Block Name">
+      <apex:pageBlockSection title="Section Title">
+          Contact First Name  : {! Contact.FirstName } <br/>
+          Contact Last Name   : {! Contact.LastName } <br/>
+          Contact Owner Email : {! Contact.Owner.Email}
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  -->
+
+  <apex:detail relatedList="false"/>
+  <apex:relatedList list="Cases" pageSize="6" />
+  <apex:relatedList list="Opportunities"/>
+  <apex:form >
+      <apex:pageBlock title="Sample" id="frt">
+          <apex:pageBlockButtons location="top">
+              <apex:commandButton value="String" onclick="myfunction();" reRender="frt"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock>
+  </apex:form>
+  
+</apex:page>

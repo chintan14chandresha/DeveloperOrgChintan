@@ -1,0 +1,25 @@
+<apex:page lightningStylesheets="true" controller="testVFErrorController"> 
+<apex:form id="theForm"> 
+
+
+<apex:outputLabel value="{!$ObjectType.Opportunity.fields.Name.label}" /> 
+<apex:inputField value="{!opp.Name}" /> 
+
+<apex:outputLabel value="{!$ObjectType.Opportunity.fields.StageName.label}" /> 
+<apex:inputField value="{!opp.StageName}" /> 
+
+<apex:outputLabel value="{!$ObjectType.Opportunity.fields.CloseDate.label}" /> 
+<apex:inputField value="{!opp.CloseDate}" />  
+
+<apex:actionRegion id="track">
+    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.TrackingNumber__c.label}" /> 
+    <apex:inputField value="{!opp.TrackingNumber__c}"/> 
+       
+    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.AccountId.label}" /> 
+    <apex:inputField value="{!opp.AccountId}" >         
+    	<apex:actionSupport event="onchange" action="{!updateTestField}" reRender="theForm"  />         
+    </apex:inputField> 
+</apex:actionRegion>    
+
+</apex:form> 
+</apex:page>

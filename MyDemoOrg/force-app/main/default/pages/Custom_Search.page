@@ -1,0 +1,34 @@
+<apex:page controller="CustomSearchController" sidebar="false" name="Custom Search Application" >
+<style>
+    .inputText{
+        width:100%; 
+        height:20px;
+        font-size:18px;
+    }
+    #secondBlock{
+        display='none';
+    }
+</style>
+<script>
+    function display() {
+        var x = document.getElementById('secondBlock');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    } 
+</script>
+  <apex:pageblock title="Custom Search Application">
+      <apex:form >
+          <apex:actionFunction action="{!display}" name="display"/>
+          <apex:pageBlockSection id="firstBlock" columns="1" title="Search Section" collapsible="true">
+              <apex:outputLabel for="searchBox" title="Type your search" />
+              <apex:inputText id="searchBox" value="{!sSearchBox}" styleClass="inputText" onchange="display()"/>
+          </apex:pageBlockSection>
+          <apex:pageblocksection id="secondBlock" rendered="{!showContent}">
+              <apex:outputText value="Hello"/>
+          </apex:pageblocksection>
+      </apex:form>
+  </apex:pageblock>
+</apex:page>

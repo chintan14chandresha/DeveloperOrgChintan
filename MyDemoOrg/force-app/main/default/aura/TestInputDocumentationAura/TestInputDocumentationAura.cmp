@@ -1,0 +1,25 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" >
+    <aura:attribute name="errors" type="String" default=""/> 
+    <lightning:messages/>  
+            
+            <div style="{!if(v.errors!='','','display:none;')}">
+                <br/>                
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">                    
+                    <span class="slds-icon_container slds-icon-utility-ban slds-m-right_x-small" title="Description of icon when needed">
+                         <lightning:icon iconName="action:close" size="x-small" variant="error"/>
+                         &nbsp;
+                         <label> {!v.errors}</label>
+                    </span>                 
+                    <div class="slds-col slds-align-left"/>                 
+                    <br/>  
+                </div>
+                <br/>
+            </div>
+    
+    
+        <lightning:input type="String" aura:id="field" label="First name" placeholder="First name" required="false"/>
+        <lightning:input aura:id="field1" label="Last name" placeholder="Last name" required="true"  />
+        
+		<ui:button aura:id="submit"  label="Next" press="{! c.onClick }" />
+    
+</aura:component>

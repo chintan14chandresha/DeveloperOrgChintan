@@ -1,0 +1,15 @@
+<apex:page docType="html-5.0" standardController="Case" sidebar="false" lightningStylesheets="true" standardStylesheets="false">
+    <style type="text/css">
+        body.vf-body,
+        body.sfdcBody,
+        .slds-vf-scope.vf-body,
+        .slds-vf-scope.sfdcBody {
+            padding: 0;
+        }
+    </style>
+    <apex:pageBlock title="This is a test">
+        <div style="text-align: center;">
+            This is a test. Ignore please.
+        </div>
+    </apex:pageBlock>
+</apex:page>

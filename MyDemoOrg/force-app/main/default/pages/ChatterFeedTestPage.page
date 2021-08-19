@@ -1,0 +1,33 @@
+<apex:page showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <apex:slds />   
+    <style>
+		.publishercontainer a.publisherattach{
+			height: 100% !important;
+		}
+		.slds-scope *, .slds-scope *:before, .slds-scope *:after {
+			box-sizing: unset;
+		}
+		.publishercontainer .publisherattach span.pArrow {
+			bottom: auto;
+		}
+	</style>
+    <!-- 
+ 	//This is the previous implementation of the code of customer.
+    <div style='font: 100%/1.5 "Salesforce Sans", Arial, sans-serif;'>
+		<chatter:feed entityId="{!$CurrentPage.parameters.entityId}"/>
+	</div>
+	-->
+    <div style='font: 100%/1.5 "Salesforce Sans", Arial, sans-serif;'>
+		<div id="chatterFeedLightning"></div>
+		<script type="text/javascript">
+			$Lightning.use("c:ChatterFeedApp", function() {
+			  $Lightning.createComponent("c:ChatterFeed",
+			  { subjectId : '{!$CurrentPage.parameters.entityId}' },
+			  "chatterFeedLightning",
+			  function(cmp) {
+			  });
+			});
+		</script>
+	</div>
+</apex:page>

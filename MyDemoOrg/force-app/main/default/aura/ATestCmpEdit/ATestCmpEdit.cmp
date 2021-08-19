@@ -1,0 +1,49 @@
+<aura:component controller="ATest" implements="flexipage:availableForAllPageTypes" access="global">
+
+    <aura:attribute name="testObj" type="ATestObj__c"/>
+    <aura:attribute name="selectedList" type="List" />       
+    <aura:attribute name="promotedList" type="List"/>
+
+    <div class="container" style="height:500px">
+
+        <lightning:messages />
+    
+        <lightning:layout horizontalAlign="center">
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="slds-page-header">
+                    <h1 class="slds-text-heading_medium">
+                        <span>
+	                        <strong>ATest Object Edit</strong>
+                        </span>
+                        <span style="float:right">
+                            &nbsp;
+                        </span>
+                    </h1>
+                </div>
+                <div>&nbsp;</div>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <div class="slds-col slds-size_1-of-1">
+	                    <lightning:input aura:id="Id" name="Id" label="Id" required="true" value="{!v.testObj.Id}" disabled="true"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+	                    <lightning:input aura:id="Name" name="Name" maxlength="80" label="Name" required="true" value="{!v.testObj.Name}"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning:select aura:id="Selected" name="Selected__c" label="Selected" value="{!v.testObj.Selected__c}" >
+                            <aura:iteration items="{!v.selectedList}" var="opt">
+                                <option text="{!opt.value}" value="{!opt.key}" selected="{!opt.selected}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning:select aura:id="Promoted" name="Promoted__c" label="Promoted" value="{!v.testObj.Promoted__c}" >
+                            <aura:iteration items="{!v.promotedList}" var="opt">
+                                <option text="{!opt.value}" value="{!opt.key}" selected="{!opt.selected}"/>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

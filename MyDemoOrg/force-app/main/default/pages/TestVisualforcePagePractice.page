@@ -1,0 +1,17 @@
+<apex:page controller="TestVFController">
+    <script>
+        function check(obj){
+          if(obj.checked == true)
+             document.getElementById("{!$Component.counter}").disabled=false;
+          else
+             document.getElementById("{!$Component.counter}").disabled=true;
+        }
+    </script>
+    <apex:form id="bform" >
+        <apex:outputText id="valOut" value="Check it" />&nbsp;
+        <apex:inputcheckbox id="bCheckbox" onchange="check(this)" onClick="check(this)"/>
+        <apex:outputText value="Watch this counter: {!count}" id="counter" />
+
+        <apex:actionPoller action="{!incrementCounter}" reRender="counter" interval="15"/>
+    </apex:form>
+</apex:page>

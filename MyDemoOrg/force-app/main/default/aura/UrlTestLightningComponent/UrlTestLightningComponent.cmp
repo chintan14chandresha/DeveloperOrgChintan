@@ -1,0 +1,16 @@
+<aura:component implements="lightning:isUrlAddressable" description="c:helloTarget component">
+    <aura:attribute name="firstname" type="String" />
+     
+    <!-- Test Start Sample Values {ani=1234567899&workgroup=1234&direction=I} -->
+    <aura:attribute name="ani" type="String" />
+    <aura:attribute name="workgroup" type="String" />
+    <aura:attribute name="direction" type="String" />
+    <!-- Test Stop -->
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    Hello {!v.firstname} <br/>
+    ani : {!v.ani} <br/>
+    workgroup : {!v.workgroup} <br/>
+    direction : {!v.direction} <br/>
+    {!v.pageReference.state.c__firstname}
+</aura:component>

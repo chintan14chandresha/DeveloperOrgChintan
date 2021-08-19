@@ -1,0 +1,12 @@
+<aura:component controller="LCController27111699" implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable,lightning:actionOverride,force:lightningQuickActionWithoutHeader,lightning:availableForFlowScreens">
+	<center>
+    <lightning:buttongroup>
+        <lightning:button label="New" class="left-button" />
+        <lightning:buttonMenu aura:id="newMenu" onselect="{!c.handleSelect}" alternativeText="New" menuAlignment="right" >
+            <lightning:menuItem value="addSystem" label="Add System" />
+            <lightning:menuItem value="addInventory" label="Add Inventory" />
+            <lightning:menuItem value="openBarcodeScanner" label="Add Inventory via Barcode Scanner" />
+        </lightning:buttonMenu>
+    </lightning:buttongroup>
+    </center>
+</aura:component>

@@ -1,0 +1,83 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="truthy" type="Boolean" default="false"/>
+    <div>        
+		
+        <ui:button aura:id="button" label="Press for Message" press="{!c.show}"/>
+        <p>
+            akdfjakldsjfkajkdsjf
+        </p><br/>
+        <p>
+            akdfjakldsjfkajkdsjf
+        </p><br/>
+        <p>
+            akdfjakldsjfkajkdsjf
+        </p><br/>
+        <p>
+            akdfjakldsjfkajkdsjf
+        </p><br/>
+        <p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/><p>
+            akdfjakldsjfkajkdsjf
+        </p><br/>
+        
+    </div>
+        <aura:if isTrue="{!v.truthy}">    
+      <div>
+      <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+        <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper" tabindex="0">
+          <div class="slds-modal__header slds-theme--error slds-theme--alert-texture">
+            <h2 class="slds-text-heading--medium" id="prompt-heading-id">Service Unavailable</h2>
+          </div>
+          <div class="slds-modal__content slds-p-around--medium">
+            <div>
+              <p>Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam incididunt duis in sint irure nisi.</p>
+            </div>
+          </div>
+          <div class="slds-modal__footer slds-theme--default">
+            <button class="slds-button slds-button--neutral" onclick="{c.createRecord}">Okay</button>
+          </div>
+        </div>
+      </div>
+      <div class="slds-backdrop slds-backdrop--open"></div>
+    </div>
+  </aura:if>
+</aura:component>

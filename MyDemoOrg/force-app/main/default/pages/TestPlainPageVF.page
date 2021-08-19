@@ -1,0 +1,21 @@
+<apex:page showHeader="false" sidebar="false">
+    <!--
+    <apex:outputLink value="{!$Label.SampleLinkLabel}">Help Centre</apex:outputLink>
+    
+    <apex:image id="theImage" value="{!IMAGEPROXYURL('https://chintan14successpath-dev-ed.my.salesforce.com/sfc/p/28000000K4IO/a/0I000000VMVk/6oJJ53MkGkRwAlOsvlLh4McMYUclegrfx41cwm2rqBw')}"  alt="Image was here"/>
+
+    <apex:image id="theIma1ge" value="{!'/servlet/servlet.FileDownload?file=0690I00000EoENe'}" />
+    
+    <apex:image url="/sfc/servlet.shepherd/version/download/0680I00000G8sp1"/>
+    
+    
+    
+    <apex:image url="https://chintan14successpath-dev-ed.my.salesforce.com/sfc/p/28000000K4IO/a/0I000000VMVk/6oJJ53MkGkRwAlOsvlLh4McMYUclegrfx41cwm2rqBw"/>
+
+
+    <apex:image url="/servlet/servlet.FileDownload?file=0690I00000H4UWhQAN" />
+    -->
+       <!-- <iframe src="https://www.google.co.in" height="1100px" width="100%" frameborder="false" id="BingMap" title="Bing Map" scrolling="auto" /> -->
+       
+<apex:iframe src="https://www.google.co.in" scrolling="true" id="theIframe" height="400px" width="400px"/>
+</apex:page>

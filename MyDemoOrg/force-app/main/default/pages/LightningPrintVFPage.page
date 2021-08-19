@@ -1,0 +1,19 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="true" >
+ 	<!-- controller="LightningPrintVFController" -->
+    <apex:includeLightning />
+ 
+    <div id="AccountSummaryAppDiv" style="{background-color:blue; height:150px;}">
+    </div>
+ 
+    <script>
+        $Lightning.use("c:LightningPrint", function() {
+            $Lightning.createComponent("c:LightningPrintComponent"
+                , {"recordId" : "00128000002rFEO"}
+                , "AccountSummaryAppDiv"
+                , function(cmp) {
+                    console.log('[Account360Page] Printable Account 360 initialized');
+                });
+            });
+    </script>
+ 
+</apex:page>

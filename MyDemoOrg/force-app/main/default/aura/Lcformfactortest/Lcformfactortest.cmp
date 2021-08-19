@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId">
+	<aura:attribute name="comp" type="String" default="PHONE" />
+    
+    {!$Browser.isTablet} <br/>
+    {!$Browser.isPhone}	<br/>
+    {!$Browser.isAndroid}	<br/>
+    {!$Browser.formFactor}	<br/>  
+    <!-- <aura:if isTrue="{!v.comp == $Browser.formFactor}"> -->
+    <aura:if isTrue="{!$Browser.formFactor == 'DESKTOP'}">
+        Hello World!
+        <aura:set attribute="else">
+            Not Hello World!!
+        </aura:set>
+    </aura:if>
+</aura:component>

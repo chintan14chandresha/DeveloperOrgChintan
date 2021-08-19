@@ -1,0 +1,105 @@
+<template>
+
+
+    <template if:true={savingRecord}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+
+    <div class="slds-box slds-theme_default" >
+    
+        <lightning-record-edit-form record-id={recordId} object-api-name="Account" onsuccess={handleSuccess} onload={handleLoad} onerror={handleError} >
+            <div class="slds-grid">
+
+                <div class={colClassShade}>
+                    <b><div>Estimated</div><div>Financials</div></b>
+                </div>
+
+                <div class={colClassShade}>
+                    <div><b>Account textarea</b></div>
+                    <div><lightning-input-field field-name="Account_textarea__c" read-only disabled variant="label-hidden" class="text-bold"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Account Name</div>
+                    <div><lightning-input-field field-name="Name" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+                <!--
+                <div class={colClassShade}>
+                    <div>GM(%)</div>
+                    <div><lightning-input-field field-name="Solution_Hub_GM_Estimate__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                        
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Revenue</div>
+                    <div><lightning-input-field field-name="Solution_Hub_Revenue_Estimate__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Rebates</div>
+                    <div><lightning-input-field field-name="Rebates_Estimate__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                
+                </div>
+
+                <div class={colClassShade}>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div></div>
+                    <div></div>
+                </div>
+                -->
+            </div>
+            
+            <div class="sep-height"></div>
+
+            <div class="slds-grid">
+
+                <div class={colClassShade}>
+                    <b><div>&nbsp;Quoted</div><div>Financials</div></b>
+                </div>
+
+                <div class={colClassShade}>
+                    <div><b>Account textarea</b></div>
+                    <div><lightning-input-field field-name="Account_textarea__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Account Name</div>
+                    <div><lightning-input-field field-name="Name" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+                <!--
+                <div class={colClassShade}>
+                    <div>GM(%)</div>
+                    <div><lightning-input-field field-name="Solution_Hub_GM_Quoted__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Revenue</div>
+                    <div><lightning-input-field field-name="Solution_Hub_Revenue_Quoted__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Rebates</div>
+                    <div><lightning-input-field field-name="Rebates_Quoted__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div>Cost</div>
+                    <div><lightning-input-field field-name="Cost_Quoted__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+
+                <div class={colClassShade}>
+                    <div># of Quotes</div>
+                    <div><lightning-input-field field-name="Number_of_Quotes__c" read-only disabled variant="label-hidden"></lightning-input-field></div>
+                </div>
+                -->
+            </div>
+        
+        </lightning-record-edit-form>
+    
+    </div>
+    
+</template>

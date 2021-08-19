@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div class="slds-grid slds-box slds-size--12-of-12" style="background:white">        
+    	<div class="slds-col slds-size--2-of-12">
+            <lightning:button iconName = "action:submit_for_approval" variant="brand" label="Cancel Appointment"  /> <!-- onclick="{!c.handleClick}" -->
+        </div>
+    </div>    	
+</aura:component>

@@ -1,0 +1,11 @@
+@media print {
+    .THIS.customDiv.slds-media {
+        background-color:blue;
+        height:150px;
+    }
+}
+
+.THIS.customDiv {
+        background-color:red;
+        height:150px;
+    }

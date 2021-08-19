@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,flexipage:availableForRecordHome">
+    <lightning:button label="Create Account" variant="brand" onclick="{!c.createAccount}"/>
+</aura:component>
