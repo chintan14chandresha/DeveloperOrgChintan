@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>该记录或记录组的标识符。</help>
+    <label></label>
+    <name>fferpcore__ItemKey__c</name>
+</CustomFieldTranslation>

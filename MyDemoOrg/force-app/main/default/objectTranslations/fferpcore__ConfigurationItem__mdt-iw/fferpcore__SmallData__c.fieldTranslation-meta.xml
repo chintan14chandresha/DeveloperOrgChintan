@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>נתונים המגדירים את תהליכי הרשומה ואינם עולים על 255 תווים. שאילתת שדה זה אינה תורמת למגבלות השאילתה ב- Salesforce.</help>
+    <label></label>
+    <name>fferpcore__SmallData__c</name>
+</CustomFieldTranslation>

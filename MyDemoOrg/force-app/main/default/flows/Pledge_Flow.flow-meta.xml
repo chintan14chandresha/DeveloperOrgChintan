@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <choices>
+        <name>X150_Premium_Donation</name>
+        <choiceText>$150 Premium Donation</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>150.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>X40_Basic_Donation</name>
+        <choiceText>$40 Basic Donation</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>40.0</numberValue>
+        </value>
+    </choices>
+    <choices>
+        <name>X80_Mediocre_Donation</name>
+        <choiceText>$80 Mediocre Donation</choiceText>
+        <dataType>Currency</dataType>
+        <value>
+            <numberValue>80.0</numberValue>
+        </value>
+    </choices>
+    <interviewLabel>Pledge Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Pledge Flow</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Pledge_Form</name>
+        <label>Pledge Form</label>
+        <locationX>251</locationX>
+        <locationY>106</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Thank_you</targetReference>
+        </connector>
+        <fields>
+            <name>Header</name>
+            <fieldText>&lt;SPAN ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:12px&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;This is a sample text which has been shown here for learning purpose of development. It&amp;apos;s a pleadge form of making donations for poor and underprivileged children and womens. Donations are used for children education and women empowerment. Please select proper &lt;B&gt;amount and type&lt;/B&gt; of Donation.&lt;/FONT&gt;&lt;/SPAN&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>First_Name</name>
+            <dataType>String</dataType>
+            <fieldText>First Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Last_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Last Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Email</name>
+            <dataType>String</dataType>
+            <fieldText>Email</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Street</name>
+            <dataType>String</dataType>
+            <fieldText>Street</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>City</name>
+            <dataType>String</dataType>
+            <fieldText>City</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>State</name>
+            <dataType>String</dataType>
+            <fieldText>State</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Zip_Code</name>
+            <dataType>String</dataType>
+            <fieldText>Zip Code</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Pledge_Level</name>
+            <choiceReferences>X40_Basic_Donation</choiceReferences>
+            <choiceReferences>X80_Mediocre_Donation</choiceReferences>
+            <choiceReferences>X150_Premium_Donation</choiceReferences>
+            <dataType>Currency</dataType>
+            <fieldText>Pledge Level</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+            <scale>0</scale>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Thank_you</name>
+        <label>Thank you</label>
+        <locationX>253</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Thankyou</name>
+            <fieldText>Thank you for participating in the Nobel cause.</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Pledge_Form</startElementReference>
+    <status>Draft</status>
+</Flow>

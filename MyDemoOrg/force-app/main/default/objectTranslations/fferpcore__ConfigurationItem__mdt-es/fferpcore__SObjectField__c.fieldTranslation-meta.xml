@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Un campo de Salesforce que se relaciona con el objeto especificado y es utilizado por los procesos del elemento de configuración. La definición del campo garantiza que no se pueda eliminar.</help>
+    <label></label>
+    <name>fferpcore__SObjectField__c</name>
+</CustomFieldTranslation>

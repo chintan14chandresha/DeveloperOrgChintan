@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>贷方通知单的原因。也可以在否定发票上设置。</help>
+    <label></label>
+    <name>fferpcore__CreditNoteReason__c</name>
+    <picklistValues>
+        <masterLabel>Damaged Goods</masterLabel>
+        <translation>损坏的货物</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods Returned</masterLabel>
+        <translation>退货</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Shipment</masterLabel>
+        <translation>运送不正确</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overcharge</masterLabel>
+        <translation>过充</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retrospective Discount</masterLabel>
+        <translation>追溯折扣</translation>
+    </picklistValues>
+</CustomFieldTranslation>

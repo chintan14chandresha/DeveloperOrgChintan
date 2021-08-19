@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>構成アイテムのプロセスで使用されるSalesforce標準、カスタム、またはプラットフォームイベントオブジェクト。オブジェクトを定義すると、削除できなくなります。</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

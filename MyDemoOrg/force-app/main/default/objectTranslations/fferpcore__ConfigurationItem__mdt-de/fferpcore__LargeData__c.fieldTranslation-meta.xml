@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Daten, die die Prozesse des Datensatzes definieren und mehr als 255 Zeichen umfassen. Das Abfragen dieses Felds trägt zu Abfragebeschränkungen in Salesforce bei.</help>
+    <label></label>
+    <name>fferpcore__LargeData__c</name>
+</CustomFieldTranslation>

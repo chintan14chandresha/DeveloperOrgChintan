@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <choices>
+        <name>firstchoice</name>
+        <choiceText>First Choice</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <description>q</description>
+        <name>secondChoice</name>
+        <choiceText>Second Choice</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <interviewLabel>Radio button visibility text flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Radio button visibility text flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>first_screen</name>
+        <label>first screen</label>
+        <locationX>289</locationX>
+        <locationY>133</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>second_screen</targetReference>
+        </connector>
+        <fields>
+            <name>options_to_select</name>
+            <choiceReferences>firstchoice</choiceReferences>
+            <choiceReferences>secondChoice</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>firstchoice</defaultSelectedChoiceReference>
+            <fieldText>options to select</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>value</name>
+            <fieldText>&lt;p&gt;check for component visibility&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>firstchoice</leftValueReference>
+                    <operator>WasSelected</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>second_screen</name>
+        <label>second screen</label>
+        <locationX>540</locationX>
+        <locationY>173</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>value_2</name>
+            <fieldText>&lt;p&gt;check on component visbility.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>firstchoice</leftValueReference>
+                    <operator>WasSelected</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>first_screen</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+</Flow>

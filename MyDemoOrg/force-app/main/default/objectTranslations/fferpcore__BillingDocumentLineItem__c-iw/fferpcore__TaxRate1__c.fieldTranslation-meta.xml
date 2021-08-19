@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>שיעור המס לשימוש בעת חישוב המס עבור פריט שורה זה של מסמך חיוב.</help>
+    <label></label>
+    <name>fferpcore__TaxRate1__c</name>
+</CustomFieldTranslation>

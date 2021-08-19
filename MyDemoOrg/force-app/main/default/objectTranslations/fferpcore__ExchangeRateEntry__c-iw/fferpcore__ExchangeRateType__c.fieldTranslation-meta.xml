@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>סוגי שערים לשימוש בשערי חליפין ביסודות. אנו ממליצים שלא למחוק את סוגי התעריפים המנוהלים. לקבלת מידע נוסף, עיין בעזרה של היסודות.</help>
+    <label></label>
+    <name>fferpcore__ExchangeRateType__c</name>
+    <picklistValues>
+        <masterLabel>Average</masterLabel>
+        <translation>ממוצע</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget</masterLabel>
+        <translation>תקציב</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing</masterLabel>
+        <translation>סגירה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation>מסחרי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Historical</masterLabel>
+        <translation>היסטורי</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spot</masterLabel>
+        <translation>ספוט</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translation</masterLabel>
+        <translation>תרגום</translation>
+    </picklistValues>
+</CustomFieldTranslation>

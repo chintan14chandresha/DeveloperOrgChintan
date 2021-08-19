@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>שדה Salesforce המתייחס לאובייקט שצוין ומשמש בתהליכי פריט התצורה. הגדרת השדה מבטיחה שלא ניתן למחוק אותו.</help>
+    <label></label>
+    <name>fferpcore__SObjectField__c</name>
+</CustomFieldTranslation>

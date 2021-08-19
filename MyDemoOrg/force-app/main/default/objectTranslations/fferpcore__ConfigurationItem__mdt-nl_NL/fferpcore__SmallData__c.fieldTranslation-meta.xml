@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Gegevens die de processen van het record definiëren en niet langer zijn dan 255 tekens. Het opvragen van dit veld draagt niet bij aan querylimieten in Salesforce.</help>
+    <label></label>
+    <name>fferpcore__SmallData__c</name>
+</CustomFieldTranslation>

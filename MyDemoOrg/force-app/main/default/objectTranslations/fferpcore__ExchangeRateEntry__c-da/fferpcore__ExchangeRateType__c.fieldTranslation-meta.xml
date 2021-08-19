@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Valutakurser for brug med valutakurser i stiftelser. Vi anbefaler, at du ikke sletter de styrede taksttyper. Yderligere oplysninger finder du i Foundations Help.</help>
+    <label></label>
+    <name>fferpcore__ExchangeRateType__c</name>
+    <picklistValues>
+        <masterLabel>Average</masterLabel>
+        <translation>Gennemsnit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget</masterLabel>
+        <translation>Budget</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing</masterLabel>
+        <translation>Lukning</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation>Kommerciel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Historical</masterLabel>
+        <translation>historisk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spot</masterLabel>
+        <translation>Få øje på</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Translation</masterLabel>
+        <translation>Oversættelse</translation>
+    </picklistValues>
+</CustomFieldTranslation>

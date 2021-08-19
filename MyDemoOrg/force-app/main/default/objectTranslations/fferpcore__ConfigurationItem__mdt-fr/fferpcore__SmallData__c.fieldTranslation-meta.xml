@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Données qui définissent les processus de l’enregistrement et ne dépassent pas 255 caractères. L’interrogation de ce champ ne contribue pas aux limites de requête dans Salesforce.</help>
+    <label></label>
+    <name>fferpcore__SmallData__c</name>
+</CustomFieldTranslation>

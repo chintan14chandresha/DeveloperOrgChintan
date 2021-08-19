@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Een Salesforce-veld dat betrekking heeft op het opgegeven object en wordt gebruikt door de processen van het configuratie-item. Door het veld te definiëren, kan het niet worden verwijderd.</help>
+    <label></label>
+    <name>fferpcore__SObjectField__c</name>
+</CustomFieldTranslation>

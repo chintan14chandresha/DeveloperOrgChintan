@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Account</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Account</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Faculty</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Faculty</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Member</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Member</name>
+        <parentName>Faculty</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Organization</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Organization</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Student</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Student</name>
+        <parentName>Faculty</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:Teacher</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Teacher</name>
+        <parentName>Student</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>TESTSF.Navigational:University</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>University</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

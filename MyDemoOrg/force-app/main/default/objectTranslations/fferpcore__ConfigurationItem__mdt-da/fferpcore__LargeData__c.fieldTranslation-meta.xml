@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Data, der definerer postens processer og overstiger 255 tegn. Forespørgsel om dette felt bidrager til forespørgselsgrænser i Salesforce.</help>
+    <label></label>
+    <name>fferpcore__LargeData__c</name>
+</CustomFieldTranslation>

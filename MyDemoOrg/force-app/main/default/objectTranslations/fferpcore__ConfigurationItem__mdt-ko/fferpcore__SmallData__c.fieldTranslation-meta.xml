@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>레코드의 프로세스를 정의하고 255자를 초과하지 않는 데이터 이 필드를 쿼리해도 Salesforce의 쿼리 제한에 영향을 미치지 않습니다.</help>
+    <label></label>
+    <name>fferpcore__SmallData__c</name>
+</CustomFieldTranslation>

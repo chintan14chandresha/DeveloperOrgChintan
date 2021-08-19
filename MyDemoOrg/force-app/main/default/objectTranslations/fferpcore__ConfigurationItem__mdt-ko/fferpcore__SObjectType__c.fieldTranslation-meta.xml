@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>구성 항목 프로세스에서 사용되는 Salesforce 표준, 사용자 정의 또는 플랫폼 이벤트 객체. 객체를 정의하면 객체를 삭제할 수 없습니다.</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

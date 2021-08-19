@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>הערך הכולל של פריט שורה זה של מסמך חיוב לפני מס בהתבסס על סוג המסמך של מסמך החיוב.</help>
+    <label></label>
+    <name>fferpcore__ReportingNetValue__c</name>
+</CustomFieldTranslation>

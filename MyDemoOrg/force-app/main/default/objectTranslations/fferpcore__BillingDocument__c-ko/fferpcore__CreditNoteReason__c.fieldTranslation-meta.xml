@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>대변 메모의 사유. 음수 송장에 설정할 수도 있습니다.</help>
+    <label></label>
+    <name>fferpcore__CreditNoteReason__c</name>
+    <picklistValues>
+        <masterLabel>Damaged Goods</masterLabel>
+        <translation>손상을 입은 제품</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods Returned</masterLabel>
+        <translation>반품</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Shipment</masterLabel>
+        <translation>잘못된 배송</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overcharge</masterLabel>
+        <translation>과충전</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retrospective Discount</masterLabel>
+        <translation>회고전 할인</translation>
+    </picklistValues>
+</CustomFieldTranslation>

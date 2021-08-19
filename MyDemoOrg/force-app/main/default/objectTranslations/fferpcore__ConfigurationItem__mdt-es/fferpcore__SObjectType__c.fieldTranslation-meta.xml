@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Un objeto de evento estándar, personalizado o de plataforma de Salesforce que utilizan los procesos del elemento de configuración. La definición del objeto asegura que no se pueda eliminar.</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MlDomain xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>KC Program</description>
+    <label>KC Program</label>
+    <mlIntents>
+        <developerName>KC_Program_Intent</developerName>
+        <label>KC Program Intent</label>
+        <mlIntentUtterances>
+            <utterance>What is a KC Program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>KC</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>Kc Program</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>kc</utterance>
+        </mlIntentUtterances>
+        <mlIntentUtterances>
+            <utterance>kc program</utterance>
+        </mlIntentUtterances>
+    </mlIntents>
+    <mlSlotClasses>
+        <dataType>Text</dataType>
+        <developerName>API_NAME_ENTRY_VAL</developerName>
+        <extractionType>Value</extractionType>
+        <label>API_NAME_ENTRY(VAL)</label>
+    </mlSlotClasses>
+</MlDomain>

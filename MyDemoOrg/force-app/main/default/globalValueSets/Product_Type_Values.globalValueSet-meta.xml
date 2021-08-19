@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>S-Comm</fullName>
+        <default>false</default>
+        <label>S-Comm</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral Partner</fullName>
+        <default>false</default>
+        <label>Referral Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Terminal</fullName>
+        <default>false</default>
+        <label>Terminal</label>
+    </customValue>
+    <customValue>
+        <fullName>Self-Service Kiosk POS</fullName>
+        <default>false</default>
+        <label>Self-Service Kiosk POS</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile POS</fullName>
+        <default>false</default>
+        <label>Mobile POS</label>
+    </customValue>
+    <masterLabel>Product Type Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

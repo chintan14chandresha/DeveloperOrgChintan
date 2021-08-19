@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>שווי המס הכולל של כל פריטי השורות של מסמכי החיוב המשויכים למסמך חיוב זה.</help>
+    <label></label>
+    <name>fferpcore__TaxValueTotal__c</name>
+</CustomFieldTranslation>

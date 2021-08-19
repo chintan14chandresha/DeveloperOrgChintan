@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>FP_Portal_Link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FP Portal Link</shortDescription>
+        <value>https://www.google.com</value>
+    </labels>
+    <labels>
+        <fullName>SampleLinkLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SampleLinkLabel</shortDescription>
+        <value>/TestPlainPageVF</value>
+    </labels>
+    <labels>
+        <fullName>Wrong_Input</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>will be used in displaying error</shortDescription>
+        <value>Wrong value captured in input.</value>
+    </labels>
+</CustomLabels>

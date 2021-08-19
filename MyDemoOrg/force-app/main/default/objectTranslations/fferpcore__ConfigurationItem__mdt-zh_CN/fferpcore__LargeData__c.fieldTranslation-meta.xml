@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>定义记录过程的数据，超过255个字符。查询该字段有助于Salesforce中的查询限制。</help>
+    <label></label>
+    <name>fferpcore__LargeData__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ein Salesforce-Standard-, benutzerdefiniertes oder Plattformereignisobjekt, das von den Prozessen des Konfigurationselements verwendet wird. Durch das Definieren des Objekts wird sichergestellt, dass es nicht gelöscht werden kann.</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

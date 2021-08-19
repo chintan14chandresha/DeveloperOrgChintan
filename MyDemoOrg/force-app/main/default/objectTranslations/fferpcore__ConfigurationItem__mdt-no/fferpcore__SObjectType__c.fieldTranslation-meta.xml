@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Et Salesforce-standard-, tilpasset eller plattformhendelsesobjekt som brukes av konfigurasjonselementets prosesser. Å definere objektet sikrer at det ikke kan slettes.</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

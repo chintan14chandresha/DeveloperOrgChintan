@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>נתונים שניתן להשתמש בהם בעת ביטול או ביצוע שלב התכונה, כגון ערכי מצב קודמים או בחירות משתמש. לדוגמה, ניתן לשחזר ערכי מצב קודמים כאשר שלב התכונה חוזר.</help>
+    <label></label>
+    <name>fferpcore__Memento__c</name>
+</CustomFieldTranslation>

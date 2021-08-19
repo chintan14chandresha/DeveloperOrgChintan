@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>קוד המדינה עבור חשבון זה. זה נדרש לדיווח נכון של מע&quot;מ על מסחר חוצה גבולות בתוך האיחוד האירופי.</help>
+    <label></label>
+    <name>fferpcore__TaxCountryCode__c</name>
+</CustomFieldTranslation>

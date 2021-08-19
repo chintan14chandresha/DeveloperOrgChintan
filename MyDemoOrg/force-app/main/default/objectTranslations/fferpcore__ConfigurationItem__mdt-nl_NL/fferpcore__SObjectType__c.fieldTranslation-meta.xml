@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Een standaard, aangepast of platformgebeurtenisobject van Salesforce dat wordt gebruikt door de processen van het configuratie-item. Het definiëren van het object zorgt ervoor dat het niet kan worden verwijderd.</help>
+    <label></label>
+    <name>fferpcore__SObjectType__c</name>
+</CustomFieldTranslation>

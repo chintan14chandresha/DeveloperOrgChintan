@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Reden voor de creditnota. Kan ook worden ingesteld op negatieve facturen.</help>
+    <label></label>
+    <name>fferpcore__CreditNoteReason__c</name>
+    <picklistValues>
+        <masterLabel>Damaged Goods</masterLabel>
+        <translation>Beschadigde goederen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods Returned</masterLabel>
+        <translation>Goederen geretourneerd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Shipment</masterLabel>
+        <translation>Onjuiste verzending</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overcharge</masterLabel>
+        <translation>overbelasting</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retrospective Discount</masterLabel>
+        <translation>Korting met terugwerkende kracht</translation>
+    </picklistValues>
+</CustomFieldTranslation>

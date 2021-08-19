@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>סטטוס המס עבור מוצר זה עבור חברות SUT.</help>
+    <label></label>
+    <name>fferpcore__SalesTaxStatus__c</name>
+    <picklistValues>
+        <masterLabel>Exempt</masterLabel>
+        <translation>פטור</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exempt for Qualifying Accounts</masterLabel>
+        <translation>פטור מחשבונות זכאים</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taxable</masterLabel>
+        <translation>חייב במס</translation>
+    </picklistValues>
+</CustomFieldTranslation>

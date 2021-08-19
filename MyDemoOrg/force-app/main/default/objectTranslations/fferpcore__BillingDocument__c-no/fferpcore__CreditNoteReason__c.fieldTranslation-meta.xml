@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Årsak til kreditnota. Kan også settes på negative fakturaer.</help>
+    <label></label>
+    <name>fferpcore__CreditNoteReason__c</name>
+    <picklistValues>
+        <masterLabel>Damaged Goods</masterLabel>
+        <translation>Skadde varer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods Returned</masterLabel>
+        <translation>Varene returneres</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Shipment</masterLabel>
+        <translation>Feil forsendelse</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overcharge</masterLabel>
+        <translation>charge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retrospective Discount</masterLabel>
+        <translation>Retrospektiv rabatt</translation>
+    </picklistValues>
+</CustomFieldTranslation>
