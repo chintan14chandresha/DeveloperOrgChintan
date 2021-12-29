@@ -1,0 +1,136 @@
+/**
+ * Created by chintan.chandresha on 12/23/2021.
+ */
+
+public without sharing class MKTaskAutoAssignment {
+
+    //Variables
+    static List<MKTaskAutoAssignment.TaskOwnerDetails> usersExistingTaskCapacity = new List<MKTaskAutoAssignment.TaskOwnerDetails>();
+
+    //Methods
+    /* check the mentor availability from the Mentor Pool */
+    public static List<MKTaskAutoAssignment.TaskOwnerDetails> MKMentorAvailabilityCheck(){
+
+        Set<Id> availableUserIds = new Set<Id>();
+        Set<Id> setOfAccountIds = new Set<Id>();
+        Set<String> actionTypeTasks = new Set<String>{'Student One-to-One', 'Parent One-to-One', 'Group Chat'};
+
+        Map<Id,Id> mapTaskAccountsOwner = new Map<Id,Id>();
+        Map<Id,Integer> mapUserGroupChat = new Map<Id, Integer>();
+
+        Map<Id,Integer> mapUserOneToOneChat = new Map<Id, Integer>();
+        Map<Id,String> mapUserOneToOneChatAction = new Map<Id,String>();
+
+        Map<Id,Map<String,Integer>> userOneToOneChatMap = new Map<Id, Map<String, Integer>>();
+
+        Map<Id,String> mapGroupChatWithClassroom = new Map<Id,String>();
+        Map<Id,Student_Classroom_Association__c> mapOfSCAssociation = new Map<Id,Student_Classroom_Association__c>();
+
+        //Labels
+        Integer userCapacity = Integer.valueOf(Label.MKTask_UserCapacity);
+        String mentorPool = Label.MKConnect_ManagerPool;
+
+        //check the current tasks count with the users in the manager pool.
+        Set<Id> mentorTaskUsers = new Set<Id>([SELECT UserOrGroupId FROM GroupMember WHERE Group.DeveloperName =: mentorPool]);
+        AggregateResult[] groupedResults = [ SELECT COUNT(Id)recordCount, OwnerId, Action_Type__c
+                                             FROM Task
+                                             WHERE Status = 'Open'
+                                             AND Action_Type__c IN :actionTypeTasks
+                                             AND OwnerId IN :mentorTaskUsers
+                                             AND OwnerId IN (SELECT Id
+                                                             FROM User
+                                                             WHERE Id IN :mentorTaskUsers
+                                                             AND MKApp_Availability__c = TRUE
+                                                             AND Ameyo_Availability_Status__c = TRUE)
+                                             GROUP BY OwnerId, Action_Type__c];
+
+        //Categorise the existing task with users in two lists - group and one-to-one.
+        if (groupedResults.isEmpty()) {
+            return null;
+        }else {
+            for (AggregateResult taskRecord: groupedResults){
+
+                //Categorize the groupedResults into two types: one-to-one and group-chat
+                Integer recordCount = (Integer) taskRecord.get('recordCount');
+                String taskActionType = taskRecord.get('Action_Type__c').toString();
+                Id taskOwnerId = Id.valueOf(taskRecord.get('OwnerId').toString());
+                String chatType = actionTypeTasks[2].toString();
+
+                if (taskRecord.get('Action_Type__c') == chatType) {
+                    //already hold a GC, no task should be assigned to the user.
+                    mapUserGroupChat.put(taskOwnerId,recordCount);
+                }else if (recordCount < userCapacity) {
+                    //if the user have less one-to-one tasks then the marked capacity
+                    mapUserOneToOneChat.put(taskOwnerId,recordCount);
+                    mapUserOneToOneChatAction.put(taskOwnerId,taskActionType);
+
+                    Map<String,Integer> mapActionTypeCount = new Map<String, Integer>();
+                    mapActionTypeCount.put(taskActionType,recordCount);
+                    userOneToOneChatMap.put(taskOwnerId,mapActionTypeCount);
+                }
+            }
+        }
+
+        for (Id userId : mapUserOneToOneChat.keySet()){
+            //if the one-to-one chat user does not have a group chat then user has capacity for new tasks.
+            if (!mapUserGroupChat.containsKey(userId)) {
+                usersExistingTaskCapacity.add(new TaskOwnerDetails(userId,mapUserOneToOneChatAction.get(userId),null));
+            }
+        }
+
+        List<Task> listGroupChatDetails;
+
+        for(Task tasks : [  SELECT Id,AccountId,OwnerId FROM Task WHERE Status = 'Open' AND Action_Type__c = 'Group Chat'
+                            AND OwnerId IN :mapUserGroupChat.keySet()]){
+            mapTaskAccountsOwner.put(tasks.AccountId,tasks.OwnerId);
+            setOfAccountIds.add(tasks.AccountId);
+        }
+
+
+
+        for (Student_Classroom_Association__c scAssociation: [SELECT Student__r.Id,Student_ClassroomId__c FROM Student_Classroom_Association__c WHERE Student__c IN :setOfAccountIds]){
+            mapOfSCAssociation.put(scAssociation.Student__r.Id,scAssociation);
+        }
+
+
+        for (Student_Classroom_Association__c sCA: mapOfSCAssociation.values()){
+            mapGroupChatWithClassroom.put(mapTaskAccountsOwner.get(sCA.Student__r.Id),sCA.Student_ClassroomId__c);
+            usersExistingTaskCapacity.add(new TaskOwnerDetails(mapTaskAccountsOwner.get(sCA.Student__r.Id),'Group Chat',sCA.Student_ClassroomId__c));
+        }
+
+        return usersExistingTaskCapacity;
+
+    }
+
+    /* Assign the task to the available user from the pool */
+    public void MKTaskMentorAssignment(List<Task> newTaskList,List<TaskOwnerDetails> userCapacityList){
+
+        for (Task newTaskRecord: newTaskList){
+
+            if (newTaskRecord.Action_Type__c == 'Group Chat') {
+                //here.
+            }else {
+                //here.
+            }
+
+        }
+
+        for (TaskOwnerDetails records: userCapacityList){
+            //here.
+        }
+    }
+
+    class TaskOwnerDetails{
+        Id userId;
+        String taskType;
+        String batchId;
+
+        TaskOwnerDetails(Id userId,String taskType,String batchId){
+            this.userId = userId;
+            this.taskType = taskType;
+            this.batchId = batchId;
+        }
+    }
+
+
+}
