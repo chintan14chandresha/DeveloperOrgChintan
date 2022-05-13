@@ -1,4 +1,4 @@
-public with sharing class ATest {
+public with sharing class ATest { 
     
     @AuraEnabled
     public static ATestObj__c saveObj(ATestObj__c tst) {
